@@ -4,9 +4,16 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+
+html , body {
+    font-family: 'Roboto', 'Alef Hebrew', sans-serif;  
+}
+
 body {
     background-color: #263238;
     color:white;
+    overflow-x: hidden;
 }
 
 .bg-light-yellow {
@@ -44,14 +51,13 @@ body {
 }
 
 blockquote {
-    background: #FFF9C4;
-    border-left: 5px solid #F57F17;
+    border-left: 5px solid #ccc;
     border-radius: 3px;
     margin: 1.5em 10px 0px;
     padding: 0.5em 10px;
-    text-align: left;
+    text-align: center;
     font-style: italic;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 blockquote:before {
     color: #ccc;
@@ -67,14 +73,10 @@ blockquote::first-letter {
 .quote-heading {
     margin: 0.5em 10px 1.5em;
     text-transform: none;
-    text-align: right;
+    text-align: center;
     color: #ccc;
 }
 
-body {
-    overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
 
 .text-muted {
     color: #eee;
@@ -102,14 +104,23 @@ a.active {
 }
 
 a {
-    color: #ECEFF1;
+    color: #FFFF8D;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #ECEFF1;
+    color: #FFFF8D;
+}
+
+
+.dark{
+    color:#888;
+}
+
+.dark a {
+    color:#aaa;
 }
 
 h1,
@@ -119,7 +130,6 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -131,7 +141,6 @@ h6 {
 
 .btn-primary {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     color: #000;
     background-color: #FFFF8D;
@@ -142,8 +151,8 @@ h6 {
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
-    color: #000;
-    background-color: #FFFF8D;
+    color: #fff;
+    background-color: #fec503;
 }
 
 .btn-primary:active,
@@ -180,10 +189,9 @@ fieldset[disabled] .btn-primary.active {
     padding: 20px 40px;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #000;
+    color: #fff;
     background-color: #FFFF8D;
 }
 
@@ -192,8 +200,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    color: #000;
-    background-color: #FFFF8D;
+    color: #fff;
+    background-color: #fec503;
 }
 
 .btn-xl:active,
@@ -232,7 +240,6 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #FFFF8D;
 }
 
@@ -262,7 +269,6 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -276,7 +282,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
+    color: #000;
     background-color: #FFFF8D;
 }
 
@@ -323,6 +329,8 @@ fieldset[disabled] .btn-xl.active {
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-shadow: 0px 0px 5px #000;
+    
 }
 
 /* for slideshow
@@ -339,9 +347,7 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 22px;
-    font-style: italic;
+    font-size: 16px;
     line-height: 22px;
 }
 
@@ -349,7 +355,6 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 25px;
     font-weight: 700;
     line-height: 50px;
@@ -359,21 +364,19 @@ header .intro-text .intro-heading {
     header .intro-text {
         padding-top: 150px;
         padding-bottom: 100px;
+        text-shadow: 0px 0px 5px #000;
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 25px;
-        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
+        margin-bottom: 50px;
+        font-size: 25px;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         text-transform: uppercase;
-        font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial,sans-serif;
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 700;
         line-height: 75px;
     }
@@ -392,7 +395,6 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
@@ -471,7 +473,6 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
@@ -718,7 +719,6 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
@@ -726,7 +726,6 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
 
@@ -784,7 +783,6 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
